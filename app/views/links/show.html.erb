@@ -8,7 +8,6 @@
 <br>
 
 <div class="btn-group">
-  <div class="btn-group">
   <%= link_to 'Visit URL', @link.url, class: "btn btn-primary" %>
 </div>
 
@@ -18,6 +17,21 @@
     <%= link_to 'Destroy', @link, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-secondary" %>
   </div> 
 <% end %>
+
+<div class="btn-group pull-right">
+  <%= link_to like_link_path(@link), method: :put, class: "btn btn-default btn-sm" do %>
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    Upvote
+    <%= @link.get_upvotes.size %>
+  <%end%>
+
+  <%= link_to dislike_link_path(@link), method: :put, class: "btn btn-default btn-sm" do %>
+      <span class="glyphicon glyphicon-chevron-up"></span>
+      Downvote
+      <%= @link.get_downvotes.size %>
+  <%end%>
+   
+   </div>
 
 
 
