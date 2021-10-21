@@ -13,6 +13,6 @@ So here I am having just completed a Reddit clone app called Raddit following th
 
 
 
- * Added custom logic to the views/links/show.html.erb to show the emails of users that did not enter a username during registration
+ * Added custom logic to the views/links/show.html.erb to display the email address of users that did not enter a username during registration.
 
 <hr>
