@@ -1,7 +1,15 @@
-<div clas="page-header">
+<br><br>
+<div class="page-header">
 <!-- takes users back to the home page -->
-  <h1><a href="<%= @link.url %>"><%= @link.title %></a><br>
-  <small>Submitted by <%= @link.user.name %></small></h1>
+  <h1><a href="<%= @link.url %>"><%= @link.title %></a></h1><br>
+
+  <!--added statememt to show user email if there is no username -->
+  <% if @link.user.name == true %>
+    <h2>Submitted by <%= @link.user.name %></h2>
+  <% else %>
+ <h2>Submitted by <%= @link.user.email %></h2>
+<% end %>
+
 </div>
 <br>
 <hr>
