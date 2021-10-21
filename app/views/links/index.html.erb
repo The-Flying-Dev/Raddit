@@ -1,13 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Links</h1>
+<br/>
+<br/>
+
 
 <% @links.each do |link| %>
   <div class="link row clearfix">
     <h2>
-        <%= link_to link.title, link %>
-        <small class="author"> Submitted <%= time_ago_in_words(link.created_at) %> by <!--helper method to diplay time in word -->
-        <%= link.user.email %></small>
+        <%= link_to link.title, link %><br/>
+        <small class="author"> Submitted <%= time_ago_in_words(link.created_at) %> ago by <!--helper method to diplay time in words -->
+        <%= link.user.name %></small>
     </h2>
 
 <div class="btn-group">
@@ -30,7 +33,4 @@
  
 
 <br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Link', new_link_path %>
-<% end %>
+<hr>
