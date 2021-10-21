@@ -32,6 +32,8 @@ gem 'acts_as_votable', '~> 0.13.1'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'simple_form'
+gem 'record_tag_helper','~> 1.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
