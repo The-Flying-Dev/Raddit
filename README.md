@@ -6,7 +6,7 @@ So here I am having just completed a Reddit clone app called Raddit following th
 <hr>
 
                                                   Homepage
-  ![Screenshot](https://github.com/The-Flying-Dev/Raddit/blob/main/public/Screenshot%202021-10-21%20at%2017-33-50%20Raddit.png) <br/>
+  ![Screenshot](https://github.com/The-Flying-Dev/Jobs-Board/blob/main/public/Home%20page.png) <br/>
 <hr>
 
 <h3>Additional</h3><br/>
